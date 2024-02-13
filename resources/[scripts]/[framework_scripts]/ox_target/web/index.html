@@ -1,0 +1,47 @@
+
+<html>
+  <head>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css" />
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <div id="eye">
+      <svg id="eyeSvg" xmlns="http://www.w3.org/2000/svg" height="14px"viewBox="0 0 512 512" width="14px" fill="#000000"><path d="M464 256A208 208 0 1 0 48 256a208 208 0 1 0 416 0zM0 256a256 256 0 1 1 512 0A256 256 0 1 1 0 256z"/></svg>
+    </div>
+    <div id="options-wrapper"></div>
+    <script defer type="module" src="js/main.js"></script>
+  </body>
+</html>
+<style>
+  #eyeSvg {
+    transform-origin: center;
+  }
+
+  @keyframes spin {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+
+  @keyframes colorchange {
+    0% {
+      fill: #09ff00; / initial color /*
+    }
+    25% {
+      fill: #00ff00; / intermediate color /
+    }
+    50% {
+      fill: #00ffff; / intermediate color /
+    }
+    75% {
+      fill: #0000ff; / intermediate color /
+    }
+    100% {
+      fill: #ff00cc; / final color /
+    }
+  }
+</style>
+    

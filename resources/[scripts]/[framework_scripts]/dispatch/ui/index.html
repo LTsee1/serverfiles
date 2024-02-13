@@ -1,0 +1,25 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tsee dispatch</title>
+    <link rel="stylesheet" href="main.css">
+    <script src="nui://game/ui/jquery.js"></script>
+     <script src="script.js" type="text/javascript"></script>
+</head>
+    <body>
+        <div class="alert-list" id="alert-list">
+     
+        </div>
+        <div class="alert-list-notifications" id="notification_list">
+        </div>
+    </body>
+    <script>
+          let alertlist = $("#alert-list");
+        let notification_list = $("#notification_list")
+
+      alertlist.removeClass("alert-list-open");
+      alertlist.hide()
+     notification_list.show();
+    </script>
+</html>

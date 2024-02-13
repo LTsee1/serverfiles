@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+@import 'compass/css3';
+
+body {
+	display: none;
+	margin: 0 !important;
+	padding: 0 !important;
+	box-sizing: border-box;
+	overflow: hidden !important;
+	font-family: Poppins, semi-bold;
+	color: #fff;
+	user-select: none;
+	background-image: url(duze.png);
+	background-size: cover;
+}
+
+#container {
+	position: absolute;
+	border-radius: 10px;
+	background: rgba(0,0,0,0.6);
+	bottom: 125px;
+	left: 50%;
+	transform: translateX(-50%);
+	width: 250px;
+	height: 125px;
+	background-image: url(male.png);
+	background-size: cover;
+}
+
+.title {
+	position: relative;
+	z-index: 99;
+	top: 5px;
+	font-size: 18px;
+	width: 100%;
+	opacity: 1;
+	font-weight: 700;
+	text-align: center;
+	text-decoration: none;
+	font-style: normal;
+	font-variant: small-caps;
+	text-transform: uppercase;
+}
+
+#holdE {
+	position: relative;
+	z-index: 99;
+	font-size: 9px;
+	text-align: center;
+	text-decoration: none;
+	top: 12px;
+	line-height: 12px
+}
+
+#licznik {
+	position: relative;
+	z-index: 99;
+	bottom: -14px;
+	font-size: 28px;
+	width: 100%;
+	opacity: 1;
+	font-weight: 700;
+	text-align: center;
+	text-decoration: none;
+	font-style: normal;
+	font-variant: small-caps;
+	text-transform: uppercase;
+}

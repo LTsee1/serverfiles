@@ -1,0 +1,199 @@
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <!-- Custom CSS -->
+    <link rel="stylesheet" type="text/css" href="css/main.css" />
+    <script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+    <link rel="stylesheet" href="https://kit-pro.fontawesome.com/releases/v6.1.1/css/pro.min.css">
+</head>
+
+<body>
+    <div class="main">
+
+  
+        <div class="status">
+            <div class="status-item-radio">
+                <div class="item-radio-icon">
+                    <i class="fa-light fa-waveform-lines"></i>
+                </div>
+                <div class="item-radio-channel">333</div>
+                <span style="padding: 0.1vw;margin-top: -0.1vw;">|</span>
+                <div class="item-radio-people">5</div>
+            </div>
+
+            <div class="status-item" id="armor">
+                <div class="filler" id="armor-status"></div>
+                <div class="status-item-bg">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="1.1vw" height="1.1vw" viewBox="0 0 24 24"
+                        fill="none">
+                        <path
+                            d="M10.49 2.23 5.5 4.11c-1.15.43-2.09 1.79-2.09 3.01v7.43c0 1.18.78 2.73 1.73 3.44l4.3 3.21c1.41 1.06 3.73 1.06 5.14 0l4.3-3.21c.95-.71 1.73-2.26 1.73-3.44V7.12c0-1.23-.94-2.59-2.09-3.02l-4.99-1.87c-.85-.31-2.21-.31-3.04 0Z"
+                            stroke="#ffffff97" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                    </svg>
+                </div>
+            </div>
+
+            <div class="status-item" id="health">
+                <div class="filler" id="health-status"></div>
+                <div class="status-item-bg">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="1.1vw" height="1.1vw" viewBox="0 0 24 24"
+                        fill="none">
+                        <path
+                            d="M12.62 20.81c-.34.12-.9.12-1.24 0C8.48 19.82 2 15.69 2 8.69 2 5.6 4.49 3.1 7.56 3.1c1.82 0 3.43.88 4.44 2.24a5.53 5.53 0 0 1 4.44-2.24C19.51 3.1 22 5.6 22 8.69c0 7-6.48 11.13-9.38 12.12Z"
+                            stroke="#ffffff97" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                    </svg>
+                </div>
+            </div>
+
+            <div class="status-item" id="stress" style="display: none;">
+                <div class="filler" id="stress-status"></div>
+                <div class="status-item-bg">
+                    <i class="fa-sharp fa-light fa-brain"></i>
+                </div>
+            </div>
+
+            <div class="status-item" id="food">
+                <div class="filler" id="food-status"></div>
+                <div class="status-item-bg">
+                    <i class="fa-light fa-burger-cheese"></i>
+                </div>
+            </div>
+
+            <div class="status-item" id="water">
+                <div class="filler" id="water-status"></div>
+                <div class="status-item-bg">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="1.1vw" height="1.1vw" viewBox="0 0 24 24"
+                        fill="none">
+                        <path
+                            d="M12.61 2.21a.991.991 0 0 0-1.22 0C9.49 3.66 3.88 8.39 3.91 13.9c0 4.46 3.63 8.1 8.1 8.1s8.1-3.63 8.1-8.09c.01-5.43-5.61-10.24-7.5-11.7Z"
+                            stroke="#ffffff97" stroke-width="2" stroke-miterlimit="10"></path>
+                    </svg>
+                </div>
+            </div>
+
+            <div class="status-item" id="stamina">
+                <div class="filler" id="stamina-status"></div>
+                <div class="status-item-bg">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="1.1vw" height="1.1vw" viewBox="0 0 24 24"
+                        fill="none">
+                        <path
+                            d="M6.09 13.28h3.09v7.2c0 1.68.91 2.02 2.02.76l7.57-8.6c.93-1.05.54-1.92-.87-1.92h-3.09v-7.2c0-1.68-.91-2.02-2.02-.76l-7.57 8.6c-.92 1.06-.53 1.92.87 1.92Z"
+                            stroke="#ffffff97" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round"
+                            stroke-linejoin="round"></path>
+                    </svg>
+                </div>
+            </div>
+
+          
+
+            <div class="status-item" id="mic">
+                <div class="filler" id="mic-status"></div>
+                <div class="status-item-bg" id="mic-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="1.1vw" height="1.1vw" viewBox="0 0 24 24"
+                        fill="none">
+                        <path d="M12 15.5c2.21 0 4-1.79 4-4V6c0-2.21-1.79-4-4-4S8 3.79 8 6v5.5c0 2.21 1.79 4 4 4Z"
+                            stroke="#ffffff97" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                        <path
+                            d="M4.35 9.65v1.7C4.35 15.57 7.78 19 12 19c4.22 0 7.65-3.43 7.65-7.65v-1.7M10.61 6.43c.9-.33 1.88-.33 2.78 0M11.2 8.55c.53-.14 1.08-.14 1.61 0M12 19v3"
+                            stroke="#ffffff97" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                    </svg>
+
+                    <!--<svg xmlns="http://www.w3.org/2000/svg" width="1.1vw" height="1.1vw" viewBox="0 0 24 24" fill="none"><path d="M17 5H7c-3 0-5 2-5 5v7c0 3 2 5 5 5h10c3 0 5-2 5-5v-7c0-3-2-5-5-5ZM7 2v3" stroke="#ffffff97" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path><path d="M8.5 16a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5ZM14.5 11h4M14.5 15h.5M18 15h.5" stroke="#ffffff97" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg> -->
+                </div>
+            </div>
+
+        </div>
+
+
+        <div class="radiolist">
+
+            <div class="radiolist_top">
+                <div class="rl_top_left">
+                    <div id="radio_label">KANAŁ - #<span id="channel"></span></div>
+                </div>
+                <div class="rl_top_right">
+                    <span id="radio_count">15</span><i class="fa-light fa-user"></i>
+                </div>
+            </div>
+            <div class="radiolist_bottom" id="radio-list">
+                <!--
+                <div class="radio_user radioactiveuser">
+                    <div class="badge" id="badge">[323]</div>
+                    <div class="name" id="name">M.Milosevich</div>
+                    <div class="icon"><i class="fa-light fa-microphone"></i></div>
+                </div>
+
+                <div class="radio_user ">
+                    <div class="badge" id="badge">[255]</div>
+                    <div class="name" id="name">B.Rodkovic</div>
+                    <div class="icon"><i class="fa-light fa-microphone"></i></div>
+                </div>
+                -->
+            </div>
+
+        </div>
+
+        <div class="notifications">
+            <!--
+            <div class="notification">
+                <div class="notyfication_icon"><i class="fa-solid fa-triangle-exclamation"></i></div>
+                <div class="notyfication_right">
+                    <div class="notyfication_title">
+                        ERORR
+                    </div>
+                    <div class="notyfication_desc">
+                        Wystapil blad z platnoscia
+                    </div>
+                </div>
+            </div>
+            -->
+        </div>
+
+        <div class="progressbar">
+            <div class="progressbar_label">Leczenie...</div>
+            <div class="progressbar_bg">
+                <div class="progressbar_progres"></div>
+            </div>
+        </div>
+
+        <div class="carhud">
+
+            <div class="status-item" id="fuel">
+                <div class="filler" id="fuel-status"></div>
+                <div class="status-item-bg">
+                    <i class="fa-light fa-gas-pump"></i>
+                </div>
+            </div>
+
+            <div class="carhud-item">
+                <div class="icon"><i class="fa-light fa-location-dot"></i></div>
+                <span id="street">Alhambra Drive Away </span>
+            </div>
+
+            <div class="carhud-item">
+                <span id="speed">342 KMH</span><span style="padding: 0.1vw;margin-top: -0.1vw;">|</span><span
+                    id="compas">E</span>
+            </div>
+
+            <div class="carhud-item" id="gps-status">
+                <div class="icon"><i class="fa-light fa-location-crosshairs"></i></div>
+                <span id="gps">15 KM</span>
+            </div>
+
+        </div>
+
+
+    </div>
+
+    <script src="js/fontawesome.min.js"></script>
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/jquery-ui.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+    <script src="js/progressbar.js"></script>
+    <script src="js/app.js?v=1"></script>
+</body>
+
+</html>
